@@ -1,0 +1,1 @@
+console.log("cette instruction vient du fichier javaScript");

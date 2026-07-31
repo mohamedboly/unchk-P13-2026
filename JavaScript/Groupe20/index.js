@@ -1,0 +1,1 @@
+console.log("Ce code vient d'un fichier JS externe inclus dans le HTML avec l'attrbut src de la balise script")
