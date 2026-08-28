@@ -12,7 +12,7 @@ nom = 'Ndiaye';
 const nationalite = 'Senegalaise';
 
 
-let prenom = 5;
+let note = 5;
 
 let taille = 1.70
 
@@ -31,3 +31,4 @@ console.log(age)
 console.log(esTuGambien)
 
 console.log("Senegalaise")
+
