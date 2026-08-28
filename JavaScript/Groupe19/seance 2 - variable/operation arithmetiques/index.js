@@ -45,7 +45,7 @@ console.log(b)
 
 const taille = prompt("entez votre taille : ");
 
-console.log("votre taille augmentee de 2  est : "+ (taille + 2));
+console.log("votre taille augmentee de 2  est : "+ (parseFloat(taille) + 2));
 
 const var1 = 5;
 const var2 = '6';
@@ -58,3 +58,20 @@ console.log(parseFloat(myString))
 const myString2 = '89f7fgg99'
 
 
+
+let resultat = 5;
+
+resultat = resultat % 7;
+
+resultat %= 7;
+
+
+let i = 1;
+i = i + 1;
+console.log(i)
+i++;
+console.log(i)
+i += 1;
+console.log(i)
+i--;
+console.log(i)
