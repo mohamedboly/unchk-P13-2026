@@ -132,4 +132,108 @@ let transfertToObject = JSON.parse(transfertString)
 
 console.log(transfertToObject);
 
-// 6. .Les méthodes de Object a continuer
+console.log('---------- // 6. .Les méthodes de Object a continuer --------')
+
+etudiant3.toString = function () {
+    console.log(this.prenom);
+}
+
+console.log(etudiant3.toString())
+
+let nombreObjet = new Number(45);
+
+let nombre = nombreObjet.valueOf();
+
+console.log(nombre + 2);
+
+console.log('----------- Les tableaux --------------');
+
+const universites = ['ucad', 'ugb', 'unchk', 'uadb'];
+
+console.log(universites[0]);
+console.log(universites[3]);
+
+let etudiant4 = {
+    prenom: 'Moussa',
+    note: 18
+}
+
+let etudiants = [ 
+    {
+        prenom: 'Moussa',
+        note: 18
+    },
+     {
+        prenom: 'Samaba',
+        note: 19
+    },
+
+     {
+        prenom: 'Aicha',
+        note: 16
+    },
+
+
+];
+
+let etudiant1erNote = etudiants[0].note;
+
+
+let count = [1,, 3]; // let count = [1, undefined, 3];
+
+let monTab = [] // let monTab = [1, 2]
+monTab[0] = 1;
+monTab[1] = 2;
+
+let monAutreTab = new Array();
+monAutreTab[0] = 1;
+
+let a = new Array(5, 4, 3, 2, 1, "testing, testing"); // let a = [5, 4, 3, 2, 1, "testing, testing"];
+
+let b = new Array(10);
+
+let c = new Array("fgvh"); // c = ["fgvh"]
+
+console.log('-------- ajout element------------')
+
+let d = [3,4];
+d[2] = 5;
+console.log(d)
+
+d.push(89)
+console.log(d)
+
+
+d.unshift(6);
+console.log(d)
+
+console.log('--------- iterer ---------');
+
+for(let i = 0; i < etudiants.length; i++) {
+    console.log('Etudiant a l\'indice '+ i);
+    console.log(etudiants[i])
+}
+
+for (let etudiant in etudiants) {
+    console.log(etudiant)
+}
+
+console.log('Tableau mutidimentionnel')
+
+let tabMultidimentionnel = [
+    [1, 5, 7],
+    [7, 0, 7],
+
+];
+
+let sousTab1 = tabMultidimentionnel[0];
+
+console.log(sousTab1);
+
+console.log(sousTab1[0])
+
+console.log(tabMultidimentionnel[1][2]);
+
+
+
+
