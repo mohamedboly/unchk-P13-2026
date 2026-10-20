@@ -189,3 +189,93 @@ console.log(nombre + 2);
 
 // Les tableaux 
 
+console.log('--------- Les taleaux --------')
+
+let notes = [10, 15, 78, 90];
+let tab1 = ['test', 10, {nom: 'Aliou', prenom: 'Thiaw' }, true]; // let tab1 = new Array ('test', 10, {nom: 'Aliou', prenom: 'Thiaw' }, true)
+let tabVide = [];   //  let tabVide = new Array();
+
+
+console.log(notes[0]);
+notes[0] = 20;
+console.log(notes[0]);
+console.log(notes[3])
+
+console.log(tab1[2]);
+
+tabVide[0]= 5;
+tabVide[1] = 7;
+
+let tabNotesEleves = [
+  [10, 15, 17],
+  [16, 13, 11]
+]
+
+console.log(tabNotesEleves[0])
+console.log(tabNotesEleves[0][1])
+
+let monTableau = new Array(10, 78); // let monTableau = [10, 78]
+
+let monTableau2 = new Array(10);
+
+console.log(notes.length)
+
+let monTab = [4];
+monTab[1] = 6;
+console.log(monTab)
+
+monTab.push(78)
+console.log(monTab)
+monTab.push(8,9,5)
+console.log(monTab)
+monTab.unshift(34)
+console.log(monTab)
+
+let notes1 = [10, 15, 78, 90];
+// parcourir un tableau
+console.log(notes1)
+console.log('parcourir un tableau')
+for(let i = 0; i < notes1.length; i++) {
+  console.log('index : ' +i);
+  console.log('note : ' + notes1[i]);
+}
+
+console.log ('for in loop')
+
+for(let index in notes1) {
+
+  console.log(index)
+  console.log(notes1[index])
+
+
+}
+console.log ('for of loop')
+
+for(let value of notes1) {
+   console.log(value)
+}
+
+// fonction
+console.log("------- Fonctions ----------")
+
+function saluer() {
+  console.log('Salut a tous avec une definition de fonction');
+}
+
+
+saluer();
+
+let salutation = function () {
+  console.log('Salut avec une expression de fonction')
+}
+
+salutation();
+
+function saluer2 (prenom, nom) {
+  console.log('Bonjour '+ prenom + ' ' + nom);
+}
+
+saluer2('Fanny', 'Badji');
+saluer2('Fatou', 'Kane')
+
+

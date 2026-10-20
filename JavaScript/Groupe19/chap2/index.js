@@ -234,6 +234,63 @@ console.log(sousTab1[0])
 
 console.log(tabMultidimentionnel[1][2]);
 
+// ------------- les fonctions ------------
+
+console.log(1)
+console.log(2)
+console.log(3)
+
+console.log("------for loop--------")
+
+for (let index = 1; index <= 10; index++) {
+    console.log(index)
+    
+}
 
 
+console.log("------function--------")
+
+function repeter(n) {
+    for (let index = 1; index <= n; index++) {
+    console.log(index)
+    
+    }
+}
+
+
+
+repeter(15);
+
+let etudiant18 = {
+    prenom: 'Ali',
+    saluer: function(){
+        console.log("je m'appelle " + this.nom)
+    }
+}
+
+etudiant18.prenom = 'Moussa'
+etudiant18.saluer()
+
+let saluer1 = function(param1,paramtre2) {
+    console.log('je vous salue');
+}
+
+saluer1(1, 3);
+
+let saluer2 = ( function() {
+    console.log('je vous salue');
+})();
+
+
+
+function carre (x) { 
+    return x*x;
+}
+
+let carreNombre = carre(5);
+
+console.log(carreNombre)
+
+let carreNombre100 = carre(100)
+console.log(carreNombre100)
 
