@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        .btn {
+            color: orange;
+        }
+
+        #box {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+         p span {
+            background-color: yellow;
+        }
+        p[lang="fr"] {
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 id="monh1">Bonjour</h1>
+    <p class="test" id="para">Mon premier 
+        <span>paragraphe</span></p>
+    <p lang="fr">Je suis ecrit en rouge</p>
+    <p>Mon <span>deuxieme</span> paragraphe</p>
+    <span>Un autre span</span>
+    <div class="test"><button name="genre" type="radio">F</button><button name="genre" type="radio">M</button></div>
+    <button id="monBtn">Cliquer moi</button>
+     <div id="log">
+        <div class="fatal">
+            une erreur fatale
+        </div>
+    </div>
+
+    <div class="fatal">
+            une erreur fatale
+    </div>
+    <div id="box"></div>
+
+    <script src="index.js"></script>
+</body>
