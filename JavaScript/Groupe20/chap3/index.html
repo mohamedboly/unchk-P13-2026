@@ -9,17 +9,36 @@
         .btn {
             background-color: aqua;
         }
+
+        #box {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .test {
+            font-size: medium;
+        }
+
+        p span {
+            background-color: yellow;
+        }
     </style>
    
 </head>
 <body>
+
     <h1 id="monh1">Bonjour</h1>
     <p>
         Nous allons nous servir du <strong>DOM</strong> pour animer nos page web
     </p>
 
-    <p>
-        Nous allons nous servir du <strong>DOM</strong> pour animer nos page web. Et je suis le duexieme paragraphe
+    <p id="para">
+        Nous allons nous servir du <strong>DOM</strong> pour 
+        animer nos page web. Et je suis le deuxieme paragraphe
+        <span>test</span> 
     </p>
     <button id="monBtn">Voici un bouton</button>
       
@@ -27,6 +46,22 @@
      <button name="genre" type="radio">F</button>
       <button name="genre" type="radio">M</button>
    </div>
+
+    <div id="box"></div>
+
+    <div class="test">Div  avec la classe test</div>
+    <p class="test">p  avec la classe test</p>
+    <span class="test">span 1 avec la classe test</span>
+
+    <div id="log">
+        <div class="fatal">
+            une erreur fatale
+        </div>
+    </div>
+
+    <div class="fatal">
+            une erreur fatale
+    </div>
 
 
      <script src="index.js"></script>
